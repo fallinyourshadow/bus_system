@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ManageWindow</class>
+ <widget class="QMainWindow" name="ManageWindow">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>245</width>
+    <height>127</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ManageWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="font">
+       <font>
+        <family>Adobe Arabic</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>数据库管理</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>245</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="io_m">
+    <property name="title">
+     <string>录入和修改</string>
+    </property>
+    <addaction name="prentInfo_a"/>
+    <addaction name="separator"/>
+    <addaction name="arriveInfo_a"/>
+   </widget>
+   <widget class="QMenu" name="maintian_m">
+    <property name="title">
+     <string>维护</string>
+    </property>
+    <addaction name="notice_a"/>
+   </widget>
+   <addaction name="io_m"/>
+   <addaction name="maintian_m"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="notice_a">
+   <property name="text">
+    <string>公告</string>
+   </property>
+  </action>
+  <action name="prentInfo_a">
+   <property name="text">
+    <string>父表信息</string>
+   </property>
+  </action>
+  <action name="arriveInfo_a">
+   <property name="text">
+    <string>到站情况表</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="text">
+    <string/>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

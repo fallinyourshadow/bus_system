@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>NoticeForm_w</class>
+ <widget class="QDialog" name="NoticeForm_w">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1605</width>
+    <height>732</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_3">
+   <item row="0" column="0">
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="0" column="0">
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QLabel" name="tid_l">
+             <property name="text">
+              <string>终端id:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="tid_e"/>
+           </item>
+           <item>
+            <widget class="QLabel" name="sname_l">
+             <property name="text">
+              <string>站台名:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="sname_e"/>
+           </item>
+           <item>
+            <widget class="QPushButton" name="select_b">
+             <property name="text">
+              <string>查询</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="fliter_l">
+             <property name="text">
+              <string> 筛选</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="select_fliter">
+             <item>
+              <property name="text">
+               <string>全部</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>历史</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>正在使用</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>即将发布</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>未发布</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="delete_b">
+             <property name="text">
+              <string>删除</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QTableView" name="tableView"/>
+         </item>
+        </layout>
+       </item>
+       <item row="0" column="1">
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="QLabel" name="notice_l">
+             <property name="text">
+              <string>公告内容</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="notice_num_l">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>记录编号:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="show_tid_l">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>终端:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="wather_l">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>天气:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="wather">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <item>
+              <property name="text">
+               <string>无</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>雨</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>晴</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>阴</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="create_b">
+             <property name="text">
+              <string>创建新的</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="publish_delay_b">
+             <item>
+              <property name="text">
+               <string>发布时间</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>现在</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>自定义</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="publish_b">
+             <item>
+              <property name="text">
+               <string>应用到</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>所有已存在记录的终端</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>选中列表中的终端</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>输入终端id</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QTextEdit" name="notice_e"/>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="show_selected">
+       <property name="text">
+        <string>选中的行：</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
