@@ -26,7 +26,7 @@ create table immediate_bus_location(
 	bus_id  char(10) not null,#公交id 10个字符 不能为空
 	terminal_id char(10) not null,#终端id 10个字符 不能为空
 	sequence_position int unsigned not null,#站位 无符号整型 不能为空
-	is_arrive bit default 0 not null,#是否到达 bit 默认为0 不能为空
+	is_arrive int default 0 not null,#是否到达 bit 默认为0 不能为空
 	constraint bus_location_fk foreign key(bus_id) references bus_info(bus_id),
 	constraint terminal_location_fk foreign key(terminal_id) references spot_info(terminal_id)
 )engine=InnoDB default charset=gbk;
